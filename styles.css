@@ -18,11 +18,12 @@
   line-height: 1;
 }
 
-.header a {
+.header a.header__link {
   color: #FFCC66;
   background: #ffffff;
   padding: 15px 40px 15px 20px;
   font-size: 18px;
+  border-radius: 5px;
 }
 
 .header__link {
@@ -41,6 +42,7 @@
 }
 
 .about__title__description {
+  font-size: 18px;
   text-align: center;
   font-weight: 700;
 }
@@ -74,6 +76,7 @@
 }
 
 .point__title__description {
+  font-size: 18px;
   text-align: center;
   font-weight: 700;
 }
@@ -125,7 +128,29 @@
   font-weight: 700;
 }
 
+.gallery__container {
+  margin-top: 50px;
+}
+
+.gallery__container ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 422px 422px;
+      grid-template-columns: 422px 422px;
+  -ms-grid-rows: (290px)[4];
+      grid-template-rows: repeat(4, 290px);
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gallery__container ul > li:hover {
+  opacity: 0.7;
+}
+
 .recommend {
+  background: #f7f7f7;
   padding: 100px 300px;
 }
 
@@ -136,7 +161,98 @@
 }
 
 .recommend__title__description {
+  font-size: 18px;
   text-align: center;
   font-weight: 700;
+}
+
+.recommend__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+
+.recommend__content__list {
+  background: #ffffff;
+  width: 100%;
+  padding: 50px 30px;
+  text-align: center;
+}
+
+.recommend__content__list h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  line-height: 1;
+}
+
+.recommend__content__list h3 {
+  font-size: 50px;
+}
+
+.recommend__content__list h3 > span {
+  font-size: 30px;
+}
+
+.recommend__content__list li > p {
+  font-size: 18px;
+  font-weight: 500;
+  background: #f7f7f7;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.recommend__content ul:nth-of-type(2) {
+  margin-left: 30px;
+}
+
+.reserve {
+  background: #f7f7f7;
+  padding: 100px 300px;
+}
+
+.reserve__title {
+  font-size: 48px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.reserve__title__description {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 100px;
+}
+
+.reserve__form {
+  width: 200px;
+  text-align: center;
+  background: #FFCC66;
+  margin: auto;
+  padding: 15px 0;
+  border-radius: 5px;
+}
+
+.reserve__form__btn {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+footer {
+  background: #444;
+  padding: 15px 0;
+}
+
+footer p {
+  text-align: center;
+  color: #eeeeee;
+  font-size: 14px;
+  font-weight: 600;
 }
 /*# sourceMappingURL=styles.css.map */
